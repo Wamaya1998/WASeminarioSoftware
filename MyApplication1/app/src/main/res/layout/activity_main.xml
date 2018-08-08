@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtJugador"
+        android:layout_width="141dp"
+        android:layout_height="30dp"
+        android:text="Eleccion del Jugador: "
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:id="@+id/ImgJugador"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/txtJugador"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/images"
+
+
+        />
+
+    <TextView
+        android:id="@+id/TxtCPU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ImgJugador"
+        android:text="Eleccion del Celular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        />
+    <ImageView
+        android:id="@+id/ImgCPU"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/images"
+        android:layout_below="@id/TxtCPU"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/TxtMarcador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntaje:   Usuario:0   CPU:0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ImgCPU"
+
+        />
+
+    <Button
+        android:id="@+id/BtnPiedra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="47dp"
+        android:layout_toStartOf="@+id/TxtCPU"
+        android:text="Piedra" />
+
+    <Button
+        android:id="@+id/BtnPapel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/BtnPiedra"
+
+        android:layout_centerHorizontal="true"
+        android:text="Papel" />
+
+    <Button
+        android:id="@+id/BtnTijera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/BtnPiedra"
+
+
+        android:layout_toEndOf="@+id/TxtCPU"
+        android:text="Tijera" />
+</RelativeLayout>
